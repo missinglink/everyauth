@@ -1102,7 +1102,7 @@ var everyauth = require('everyauth')
 everyauth.google
   .appId('YOUR CLIENT ID HERE')
   .appSecret('YOUR CLIENT SECRET HERE')
-  .scope('https://www.googleapis.com/auth/userinfo.profile') // What you want access to
+  .scope('https://www.googleapis.com/auth/userinfo.profile') // Space delimited list of what you want access to
   .handleAuthCallbackError( function (req, res) {
     // If a user denies your app, Google will redirect the user to
     // /auth/google/callback?error=access_denied
